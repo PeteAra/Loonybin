@@ -54,7 +54,7 @@ export function Hero() {
           When the loons call, and you answer.
         </h1>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream/90">
-        Escape to The Loony ’BinShorefront on the point at Lake Minnewawa.
+        Escape to The Loony ’Bin. Shorefront on the point at Lake Minnewawa.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <a href="#book" className="rounded-full bg-amber px-5 py-3 text-sm font-medium text-bark">
