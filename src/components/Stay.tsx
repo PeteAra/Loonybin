@@ -10,9 +10,9 @@ export function Stay() {
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-[1.2fr_0.8fr] md:py-24">
         <div>
           <p className="text-xs uppercase tracking-[0.22em] text-moss">The stay</p>
-          <h2 className="mt-3 font-serif text-5xl leading-[0.95] tracking-tight md:text-7xl">At the end of the peninsula.</h2>
+          <h2 className="mt-3 font-serif text-5xl leading-[0.95] tracking-tight md:text-7xl">The loony side of the lake.</h2>
           <p className="mt-6 max-w-xl text-lg leading-relaxed">
-            The Loony'Bin sits shorefront on Lake Minnewawa, where the point runs out near McGregor. Fall leaves, a screened porch, and a fire pit between the cabin and the water.
+            Tucked away on a peaceful peninsula on Lake Minnewawa, The Loony ’Bin is your little slice of Northwoods paradise. Think slow mornings on the screened porch, afternoons on the water, loon calls across the lake, and evenings around the fire. Come as you are, stay a while, and get a little loony.
           </p>
         </div>
         <dl className="divide-y divide-bark/15 border-y border-bark/15">
@@ -29,9 +29,9 @@ export function Stay() {
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-14 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-xs uppercase tracking-[0.22em] text-amber">The hot tub</p>
-            <h3 className="mt-3 max-w-xl font-serif text-4xl leading-tight md:text-5xl">This season, the deck is the reason to come.</h3>
+            <h3 className="mt-3 max-w-xl font-serif text-4xl leading-tight md:text-5xl">This season, the hot tub is the reason.</h3>
           </div>
-          <p className="max-w-sm text-cream/80">After the lake goes quiet, the water stays hot. Soak with the trees around the point.</p>
+          <p className="max-w-sm text-cream/80">After the lake goes quiet, the water stays hot.</p>
         </div>
       </div>
 

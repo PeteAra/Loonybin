@@ -51,10 +51,10 @@ export function Hero() {
           <span className="text-cream/85">Hot tub</span>
         </p>
         <h1 className="mt-6 max-w-4xl font-serif text-[clamp(3.1rem,8vw,6.6rem)] leading-[0.9] tracking-[-0.035em] text-cream">
-          A cozy stay on a quiet peninsula.
+          When the loons call, and you answer.
         </h1>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream/90">
-          Shorefront on the point at Lake Minnewawa, near McGregor. The hot tub is in. The dock is out until summer.
+        Escape to The Loony ’BinShorefront on the point at Lake Minnewawa.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <a href="#book" className="rounded-full bg-amber px-5 py-3 text-sm font-medium text-bark">
