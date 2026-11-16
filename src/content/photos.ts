@@ -61,7 +61,7 @@ export const photos = {
   },
   shore: {
     src: "/photos/shore.jpg",
-    alt: "Fire pit and Adirondack chairs on the shore, looking out through fall trees to the lake.",
+    alt: "A wood paddleboard in the foreground and a yellow kayak on the lake, with trees along the far shore.",
   },
   dusk: {
     src: "/photos/dusk.jpg",

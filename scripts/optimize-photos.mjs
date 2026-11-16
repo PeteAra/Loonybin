@@ -21,7 +21,7 @@ const files = [
   ["DSC09531.jpg", "morning.jpg"],
   ["DSC09580.jpg", "summer.jpg"],
   ["DSC03974.jpg", "porch-quiet.jpg"],
-  ["DSC08931.jpg", "shore.jpg"],
+  ["IMG_6957.JPEG", "shore.jpg"],
   ["Winter.JPEG", "winter.jpg"],
   ["Cozy lakeside cabin at dusk.PNG", "dusk.jpg"],
   ["Autumn Cabin Among Fall Foliage.PNG", "autumn.jpg"],
