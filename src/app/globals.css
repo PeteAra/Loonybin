@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cedar: #6e432c;
+  --color-bark: #24170f;
+  --color-green: #24352b;
+  --color-moss: #3e5346;
+  --color-sage: #6d7f68;
+  --color-cream: #f3eee4;
+  --color-paper: #faf6f0;
+  --color-amber: #e2a23f;
+  --color-amber-deep: #8d5a18;
+  --color-leaf: #8b6b4a;
+  --font-serif: var(--font-fraunces), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-outfit), "Avenir Next", "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-bark);
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='.55'/></svg>");
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-amber-deep);
+  outline-offset: 3px;
+}
+
+.section-anchor {
+  scroll-margin-top: 5.5rem;
+}
+
+.steam {
+  position: absolute;
+  left: 16%;
+  bottom: 22%;
+  width: 7rem;
+  height: 9rem;
+  pointer-events: none;
+}
+
+.steam span {
+  position: absolute;
+  bottom: 0;
+  width: 2.6rem;
+  height: 5.5rem;
+  border-radius: 999px;
+  background: radial-gradient(ellipse at center, rgba(255, 250, 242, 0.75), transparent 70%);
+  filter: blur(8px);
+  animation: steam-rise 7.5s ease-in infinite;
+}
+
+.steam span:nth-child(2) {
+  left: 1.6rem;
+  animation-delay: 2.2s;
+  animation-duration: 8.5s;
+}
+
+.steam span:nth-child(3) {
+  left: 3.1rem;
+  animation-delay: 4s;
+  height: 4.5rem;
+}
+
+@keyframes steam-rise {
+  0% { transform: translateY(12px) scale(0.55); opacity: 0; }
+  18% { opacity: 0.75; }
+  100% { transform: translateY(-130px) scale(1.35); opacity: 0; }
+}
+
+.film-section {
+  view-timeline-name: --film;
+  view-timeline-axis: block;
+}
+
+.film-viewport {
+  overflow: hidden;
+}
+
+.film-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  padding-inline: 6vw;
+  animation: film-drift linear both;
+  animation-timeline: --film;
+  animation-range: entry 0% exit 90%;
+}
+
+@keyframes film-drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% + 92vw)); }
+}
+
+.stamp {
+  width: 7.5rem;
+  height: 7.5rem;
+  display: grid;
+  place-items: center;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  text-align: center;
+  font-size: 0.68rem;
+  line-height: 1.25;
+  transform: rotate(-8deg);
+  padding: 0.8rem;
+}
+
+.cabin-calendar {
+  --rdp-accent-color: #8d5a18;
+  --rdp-accent-background-color: #f6e7cf;
+  --rdp-day-height: 2.75rem;
+  --rdp-day-width: 2.75rem;
+  --rdp-day_button-height: 2.55rem;
+  --rdp-day_button-width: 2.55rem;
+  --rdp-range_middle-background-color: #f6e7cf;
+  --rdp-range_middle-color: #24170f;
+  --rdp-range_start-color: #faf6f0;
+  --rdp-range_end-color: #faf6f0;
+  --rdp-range_start-date-background-color: #8d5a18;
+  --rdp-range_end-date-background-color: #8d5a18;
+  --rdp-today-color: #8d5a18;
+  --rdp-selected-border: 2px solid transparent;
+  --rdp-weekday-opacity: 0.7;
+  font-family: var(--font-outfit), sans-serif;
+}
+
+.cabin-calendar .day-booked .rdp-day_button {
+  background: #ead9c4;
+  color: #7c6248;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .steam { display: none; }
+  .film-viewport { overflow-x: auto; }
+  .film-track { animation: none; }
+  .hot-tub-story { height: auto; }
+  .story-line { opacity: 1 !important; position: relative !important; transform: none !important; }
+}
+
+html.js .hot-tub-story:not([data-reduce="true"]) .story-line { opacity: 0; }
+html.js .hot-tub-story:not([data-reduce="true"]) .story-line:first-child { opacity: 1; }
+html.js .hot-tub-story:not([data-reduce="true"]) .story-frame { opacity: 0; }
+html.js .hot-tub-story:not([data-reduce="true"]) .story-frame:first-of-type { opacity: 1; }
