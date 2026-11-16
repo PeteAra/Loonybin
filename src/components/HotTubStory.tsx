@@ -11,9 +11,9 @@ const lines = [
 ];
 
 const frames = [
+  { photo: photos.autumn, position: "object-center" },
   { photo: photos.dusk, position: "object-[22%_center]" },
   { photo: photos.bedroom, position: "object-[24%_center]" },
-  { photo: photos.autumn, position: "object-center" },
 ];
 
 export function HotTubStory() {
